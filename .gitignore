@@ -1,0 +1,90 @@
+# ============================================================
+# .gitignore für Agentic-UI
+# Stack: C# / ASP.NET Core + React / Vite
+# ============================================================
+
+# ------------------------------------------------------------
+# .NET / C# / ASP.NET Core
+# ------------------------------------------------------------
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+.vs/
+.vscode/
+*.log
+*.tmp
+
+# Publish-Ausgaben
+publish/
+**/publish/
+**/PublishProfiles/
+
+# NuGet
+*.nupkg
+*.snupkg
+**/packages/
+!**/packages/build/
+nuget.config.local
+
+# Entity Framework Migrations (optional – auskommentieren wenn gewünscht)
+# **/Migrations/
+
+# Secrets & Konfiguration
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+**/*.pfx
+**/*.p12
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# ------------------------------------------------------------
+# Node.js / React / Vite
+# ------------------------------------------------------------
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Caches
+.eslintcache
+.stylelintcache
+.parcel-cache/
+.cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# Env-Dateien
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ------------------------------------------------------------
+# Betriebssystem
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ------------------------------------------------------------
+# Azure / Cloud
+# ------------------------------------------------------------
+.azure/
+local.settings.json
