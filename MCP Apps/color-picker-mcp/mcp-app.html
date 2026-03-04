@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Color Picker</title>
+</head>
+<body>
+  <main class="main">
+    <div class="preview" id="color-preview">
+      <div class="preview-swatch" id="swatch"></div>
+      <code class="preview-hex" id="hex-display">#3b82f6</code>
+    </div>
+
+    <div class="picker-section">
+      <label for="color-input">Pick a color</label>
+      <input type="color" id="color-input" value="#3b82f6">
+    </div>
+
+    <div class="sliders">
+      <div class="slider-row">
+        <label for="slider-r">R</label>
+        <input type="range" id="slider-r" min="0" max="255" value="59">
+        <span class="slider-value" id="value-r">59</span>
+      </div>
+      <div class="slider-row">
+        <label for="slider-g">G</label>
+        <input type="range" id="slider-g" min="0" max="255" value="130">
+        <span class="slider-value" id="value-g">130</span>
+      </div>
+      <div class="slider-row">
+        <label for="slider-b">B</label>
+        <input type="range" id="slider-b" min="0" max="255" value="246">
+        <span class="slider-value" id="value-b">246</span>
+      </div>
+    </div>
+
+    <div class="hex-input-row">
+      <label for="hex-input">Hex</label>
+      <input type="text" id="hex-input" value="#3b82f6" maxlength="7" spellcheck="false">
+    </div>
+
+    <div class="info-grid">
+      <div class="info-item">
+        <span class="info-label">RGB</span>
+        <code class="info-value" id="rgb-display">59, 130, 246</code>
+      </div>
+      <div class="info-item">
+        <span class="info-label">HSL</span>
+        <code class="info-value" id="hsl-display">217, 91%, 60%</code>
+      </div>
+    </div>
+
+    <button id="copy-btn">Copy Hex</button>
+  </main>
+  <script type="module" src="/src/mcp-app.ts"></script>
+</body>
+</html>

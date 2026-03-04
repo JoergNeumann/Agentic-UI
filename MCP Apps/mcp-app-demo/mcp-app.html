@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Todo MCP App</title>
+</head>
+<body>
+  <main class="main">
+    <h1>Todo Liste</h1>
+
+    <div class="add-form">
+      <input type="text" id="new-todo-input" placeholder="Neues Todo eingeben..." />
+      <button id="add-btn">Hinzufuegen</button>
+    </div>
+
+    <ul id="todo-list">
+      <li class="loading">Lade Todos...</li>
+    </ul>
+
+    <p class="status" id="status"></p>
+  </main>
+  <script type="module" src="/src/mcp-app.ts"></script>
+</body>
+</html>
